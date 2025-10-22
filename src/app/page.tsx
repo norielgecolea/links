@@ -33,8 +33,8 @@ export default function Home() {
         </h2>
         <div className="space-y-3">
           {[
-            { name: "My Portfolio", icon: "/internet.png", link: "https://www.norielgecolea.com" },
-            { name: "My Resume", icon: "/cv.png", link: "https://www.norielgecolea.com/NORIEL_GECOLEA_RESUME.pdf" },
+            { name: "My Portfolio", icon: "./internet.png", link: "https://www.norielgecolea.com" },
+            { name: "My Resume", icon: "./cv.png", link: "https://www.norielgecolea.com/NORIEL_GECOLEA_RESUME.pdf" },
 
           ].map((link, i) => (
             <a
@@ -63,8 +63,8 @@ export default function Home() {
         </h2>
         <div className="space-y-3">
           {[
-            { name: "Facebook", icon: "/communication.png", link: "https://facebook.norielgecolea.com" },
-            { name: "Instagram", icon: "/instagram.png", link: "https://instagram.norielgecolea.com/" },
+            { name: "Facebook", icon: "./communication.png", link: "https://facebook.norielgecolea.com" },
+            { name: "Instagram", icon: "./instagram.png", link: "https://instagram.norielgecolea.com/" },
 
           ].map((link, i) => (
             <a
