@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-hanken: var(--font-hanken-grotesk);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: rgb(24, 24, 27);
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  
+}
+
+.widdest{
+letter-spacing: 0.3rem;
+
+
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none; /* For Safari */
+  -ms-user-select: none; /* For old Edge/IE */
+}
