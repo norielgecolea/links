@@ -1,4 +1,5 @@
 "use client";
+import "./globals.css";
 import { FaTwitter, FaDribbble, FaGithub, FaLinkedin, FaCoffee } from "react-icons/fa";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <main className="flex flex-col items-center py-16 px-5 sm:px-6 text-center max-w-lg mx-auto font-hanken">
       {/* Profile */}
       <img
-        src="/mecartoon.png"
+        src="./mecartoon.png"
         alt="Profile"
         className="w-24 h-24 sm:w-28 sm:h-28 rounded-full mb-4 border-2 border-gray-700"
       />
