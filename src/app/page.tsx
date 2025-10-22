@@ -88,7 +88,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="mt-10 text-[10px] sm:text-xs text-gray-500">
 
-        <span className="text-white">© 2025 Noriel Gecolea </span>
+        <span className="text-white">© 2025 Noriel Gecoleaaa </span>
         <span className="text-pink-500">❤</span> All rights reserved.
         <br />
 
