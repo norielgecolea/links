@@ -25,7 +25,7 @@ export default function Home() {
       <p className="text-xs sm:text-sm text-gray-400 mb-6 px-3">
         A self-taught Software Engineer passionate about building intuitive and impactful user experiences.
       </p>
-      <p className="no-select text-xs sm:text-xs text-gray-400 mb-6 px-3">norielgecolea23@gmail.com<br/>09763998690</p>
+      <p className="no-select text-xs sm:text-xs text-gray-400 mb-6 px-3">norielgecolea23@gmail.com</p>
 
       {/* Social Icons */}
       <div className="flex space-x-4 mb-8 justify-center">
@@ -69,10 +69,43 @@ export default function Home() {
       {/* Other Links */}
       <section className="w-full mb-8">
         <h2 className="text-neutral-400 tracking-widest font-bold uppercase text-xs mb-4">
+          Contacts
+        </h2>
+        <div className="space-y-3">
+          {[
+            { name: "Email", icon: "./email.png", link: "mailto:norielgecolea23@gmail.com" },
+            { name: "Phone", icon: "./phone.png", link: "tel:+639128240698" },
+            { name: "Viber", icon: "./viber.png", link: "viber://chat?number=+639128240698" },
+            { name: "WhatsApp", icon: "./whatsapp.png", link: "https://wa.me/639128240698" },
+
+
+          ].map((link, i) => (
+            <a
+              key={i}
+              href={`${link.link}`}
+              target="_blank"
+              className="flex items-center justify-between border border-neutral-500/50 px-5 py-4 rounded-full hover:bg-green-900/60 hover:border-green-300/60 transition-all duration-200 active:scale-95"
+            >
+              <div className="flex items-center space-x-3">
+                <img className=" h-8 " src={`${link.icon}`}></img>
+                <span className="text-neutral-300/90 text-sm sm:text-base font-bold">
+                  {link.name}
+                </span>
+              </div>
+              <span className="text-gray-400 text-sm">→</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+
+<section className="w-full mb-8">
+        <h2 className="text-neutral-400 tracking-widest font-bold uppercase text-xs mb-4">
           Socials
         </h2>
         <div className="space-y-3">
           {[
+
             { name: "Facebook", icon: "./communication.png", link: "https://facebook.norielgecolea.com" },
             { name: "Instagram", icon: "./instagram.png", link: "https://instagram.norielgecolea.com/" },
 
@@ -94,6 +127,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+
 
       {/* Footer */}
       <footer className="mt-10 text-[10px] sm:text-xs text-gray-500">
