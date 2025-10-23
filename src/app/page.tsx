@@ -6,6 +6,15 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center py-16 px-5 sm:px-6 text-center max-w-lg mx-auto font-hanken">
       {/* Profile */}
+
+
+
+
+
+
+
+
+      
       <img
         src="./mecartoon.png"
         alt="Profile"
@@ -14,7 +23,7 @@ export default function Home() {
       <h1 className="text-xl sm:text-2xl font-semibold">Noriel Fernando Gecolea</h1>
       <p className="text-xs sm:text-sm text-gray-400 mb-2">Computer Engineer | Philippines</p>
       <p className="text-xs sm:text-sm text-gray-400 mb-6 px-3">
-        A self-taught Product Designer, Illustrator & Developer. Currently shaping user experiences at Brainfish.
+        A self-taught Software Engineer passionate about building intuitive and impactful user experiences.
       </p>
       <p className="no-select text-xs sm:text-xs text-gray-400 mb-6 px-3">norielgecolea23@gmail.com<br/>09763998690</p>
 
@@ -89,7 +98,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="mt-10 text-[10px] sm:text-xs text-gray-500">
 
-        <span className="text-white">© 2025 Noriel Gecoleaaa </span>
+        <span className="text-white">© 2025 Noriel Gecolea </span>
         <span className="text-pink-500">❤</span> All rights reserved.
         <br />
 
