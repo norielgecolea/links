@@ -2,8 +2,8 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #18181b;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -30,7 +30,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #18181b;
   color: var(--foreground);
   
 }
