@@ -2,9 +2,12 @@
 import "./globals.css";
 import { FaTwitter, FaDribbble, FaGithub, FaLinkedin, FaCoffee } from "react-icons/fa";
 import { useEffect, useState } from "react";
-
+type VerseDetails = {
+  text: string;
+  reference: string;
+};
 export default function Home() {
-  const [verse, setVerse] = useState(null);
+  const [verse, setVerse] = useState<VerseDetails | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -22,7 +25,6 @@ export default function Home() {
 
     fetchDailyVerse();
   }, []);
-
   return (
     <main className="flex flex-col items-center py-16 px-5 sm:px-6 text-center max-w-lg mx-auto font-hanken">
       {/* Profile */}
