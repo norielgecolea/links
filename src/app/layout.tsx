@@ -22,14 +22,14 @@ export const metadata: Metadata = {
   title: "Noriel Gecolea's Links",
   description: "My world.",
   openGraph: {
-    title: "Noriel Gecolea's Digital Portfolio",
+    title: "Noriel Gecolea's Links",
     description: "My world.",
     url: "https://links.norielgecolea.com",
     siteName: "Noriel Gecolea's Links",
     images: [
       {
         url: "https://links.norielgecolea.com/mecartoon.png", // replace with your desired preview image
-        width: 1200,
+        width: 630,
         height: 630,
         alt: "",
       },
