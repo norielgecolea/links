@@ -5,17 +5,32 @@ export default function VisitorCounter() {
   const [count, setCount] = useState<number | null>(null);
 
   useEffect(() => {
-    async function fetchCount() {
+    async function recordVisit() {
       try {
-        // change the URL key to your domain (unique ID)
-        const res = await fetch("https://api.countapi.dev/hit/links.norielgecolea.com/visits");
+        const res = await fetch("https://visitor.6developer.com/visit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            domain: "links.norielgecolea.com", // your site domain
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            page_path: window.location.pathname,
+            page_title: document.title,
+            referrer: document.referrer,
+          }),
+        });
+
         const data = await res.json();
-        setCount(data.value);
+        if (data.totalCount) {
+          setCount(data.totalCount);
+        } else {
+          console.warn("Unexpected response:", data);
+        }
       } catch (error) {
         console.error("Visitor counter error:", error);
       }
     }
-    fetchCount();
+
+    recordVisit();
   }, []);
 
   return (
