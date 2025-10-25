@@ -44,7 +44,8 @@ export default function Home() {
       </p>
 
       {/* 📖 Daily Verse */}
-      <div className="text-center mb-6 border border-gray-700 p-4 rounded-xl bg-[#1a1a1a]/70 max-w-m w-full max-w-m">
+      <div className="rgb-hover text-center mb-6 border border-gray-700 p-4 rounded-xl bg-[#1a1a1a]/70 max-w-m w-full max-w-m">
+      
         {loading ? (
           <div className="animate-pulse space-y-5">
             <div className="h-8 bg-gray-700/50 rounded w-5/6 mx-auto"></div>
@@ -83,7 +84,7 @@ export default function Home() {
               key={i}
               href={`${link.link}`}
               target="_blank"
-              className="flex items-center justify-between border border-neutral-500/50 px-5 py-4 rounded-full hover:bg-green-900/60 hover:border-green-300/60 transition-all duration-200 active:scale-95"
+              className="  flex items-center justify-between border border-neutral-500/50 px-5 py-4 rounded-full hover:bg-green-900/60 hover:border-green-300/60 transition-all duration-200 active:scale-95"
             >
               <div className="flex items-center space-x-3">
                 <img className="h-8" src={`${link.icon}`} alt={link.name} />

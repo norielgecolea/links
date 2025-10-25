@@ -46,3 +46,32 @@ letter-spacing: 0.3rem;
   -webkit-user-select: none; /* For Safari */
   -ms-user-select: none; /* For old Edge/IE */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🌈 RGB Glow Animation */
+@keyframes rgbGlow {
+  0% { box-shadow: 0 0 5px #ff0000, 0 0 15px #ff0000; border-color: #ff0000; }
+  25% { box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00; border-color: #00ff00; }
+  50% { box-shadow: 0 0 5px #0000ff, 0 0 15px #0000ff; border-color: #0000ff; }
+  75% { box-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff; border-color: #ff00ff; }
+  100% { box-shadow: 0 0 5px #ff0000, 0 0 15px #ff0000; border-color: #ff0000; }
+}
+
+
+.rgb-hover:hover {
+  animation: rgbGlow 2s linear infinite;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  transform: scale(1.03);
+}
