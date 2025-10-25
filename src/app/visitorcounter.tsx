@@ -8,7 +8,7 @@ export default function VisitorCounter() {
     async function fetchCount() {
       try {
         // change the URL key to your domain (unique ID)
-        const res = await fetch("https://api.countapi.xyz/hit/links.norielgecolea.com/visits");
+        const res = await fetch("https://api.countapi.dev/hit/links.norielgecolea.com/visits");
         const data = await res.json();
         setCount(data.value);
       } catch (error) {
