@@ -3,6 +3,7 @@ import "./globals.css";
 import { FaTwitter, FaDribbble, FaGithub, FaLinkedin, FaCoffee } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import VisitorCounter from "./visitorcounter";
+import MinecraftStatusCard from "./minecraftchecker";
 type VerseDetails = {
   text: string;
   reference: string;
@@ -143,6 +144,16 @@ export default function Home() {
               <span className="text-gray-400 text-sm">→</span>
             </a>
           ))}
+        </div>
+      </section>
+
+
+
+            <section className="w-full mb-8">
+        <h2 className="text-neutral-400 tracking-widest font-bold uppercase text-xs mb-4">Game Servers I Manage</h2>
+        <div className="space-y-3">
+<MinecraftStatusCard></MinecraftStatusCard>
+
         </div>
       </section>
 
